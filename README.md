@@ -1,4 +1,4 @@
-# Ad Market – Full Stack Project
+# Qmedia – Full Stack Project
 ## React + Node.js + Express + MongoDB + JWT Auth + Hierarchical Marketplace
 
 ---
