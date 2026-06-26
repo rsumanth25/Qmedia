@@ -317,3 +317,4 @@ const S = {
   footerBadges: { display: 'flex', gap: 10, flexWrap: 'wrap' },
   badge: { background: 'rgba(0,212,180,0.08)', border: '1px solid rgba(0,212,180,0.3)', borderRadius: 10, padding: '6px 14px', fontSize: 12, color: '#00d4b4' },
 };
+

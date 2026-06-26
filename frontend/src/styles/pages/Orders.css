@@ -1,0 +1,246 @@
+/* Orders Page Styles */
+
+.orders-page {
+  min-height: 100vh;
+  background: #0a0f1a;
+  padding: 60px 20px;
+  color: #e8f0fe;
+}
+
+.orders-container {
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+.orders-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 28px;
+}
+
+.orders-title {
+  font-family: 'Syne', sans-serif;
+  font-size: 30px;
+  font-weight: 800;
+  color: #fff;
+  margin: 0;
+}
+
+.orders-new-campaign {
+  color: #00d4b4;
+  font-size: 14px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.orders-new-campaign:hover {
+  text-decoration: underline;
+}
+
+/* Empty state */
+.orders-empty {
+  text-align: center;
+  padding: 80px 0;
+  color: #8fa3c0;
+}
+
+.orders-empty-icon {
+  font-size: 56px;
+  margin-bottom: 16px;
+}
+
+.orders-empty-title {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.orders-empty-link {
+  color: #00d4b4;
+  font-size: 15px;
+  text-decoration: none;
+  margin-top: 16px;
+  display: block;
+}
+
+.orders-empty-link:hover {
+  text-decoration: underline;
+}
+
+/* Order list */
+.orders-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.order-card {
+  background: #0d1525;
+  border: 1px solid rgba(0, 212, 180, 0.18);
+  border-radius: 16px;
+  padding: 24px;
+}
+
+.order-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 20px;
+  padding-bottom: 18px;
+  border-bottom: 1px solid rgba(0, 212, 180, 0.18);
+}
+
+.order-card-left {
+  flex: 1;
+}
+
+.order-id {
+  font-family: 'Syne', sans-serif;
+  font-weight: 700;
+  color: #fff;
+  font-size: 15px;
+}
+
+.order-date {
+  color: #8fa3c0;
+  font-size: 12px;
+  margin-top: 4px;
+}
+
+.order-status-badge {
+  padding: 5px 14px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 700;
+  border: 1px solid;
+}
+
+.order-status-pending {
+  background: rgba(245, 158, 11, 0.2);
+  color: #f59e0b;
+  border-color: rgba(245, 158, 11, 0.4);
+}
+
+.order-status-paid {
+  background: rgba(0, 212, 180, 0.2);
+  color: #00d4b4;
+  border-color: rgba(0, 212, 180, 0.4);
+}
+
+.order-status-failed {
+  background: rgba(239, 68, 68, 0.2);
+  color: #ef4444;
+  border-color: rgba(239, 68, 68, 0.4);
+}
+
+/* Order items */
+.order-items {
+  margin-bottom: 16px;
+}
+
+.order-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+}
+
+.order-item:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.order-item-name {
+  font-size: 13px;
+  font-weight: 600;
+  color: #e8f0fe;
+}
+
+.order-item-meta {
+  font-size: 11px;
+  color: #8fa3c0;
+  margin-top: 2px;
+}
+
+.order-item-price {
+  color: #00d4b4;
+  font-weight: 600;
+  font-family: 'Syne', sans-serif;
+  font-size: 14px;
+}
+
+/* Order totals */
+.order-totals {
+  background: rgba(0, 212, 180, 0.04);
+  border-radius: 10px;
+  padding: 14px 16px;
+}
+
+.order-total-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+  color: #8fa3c0;
+  margin-bottom: 5px;
+}
+
+.order-total-row.grand {
+  margin-top: 8px;
+  padding-top: 8px;
+  border-top: 1px solid rgba(0, 212, 180, 0.18);
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.order-total-row.grand span {
+  color: #fff;
+}
+
+.order-total-row.grand span:last-child {
+  color: #00d4b4;
+  font-family: 'Syne', sans-serif;
+  font-size: 22px;
+}
+
+.order-payment-id {
+  margin-top: 10px;
+  font-size: 11px;
+  color: #8fa3c0;
+}
+
+.orders-loading {
+  min-height: 100vh;
+  background: #0a0f1a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #8fa3c0;
+  font-size: 16px;
+}
+
+@media (max-width: 600px) {
+  .orders-page {
+    padding: 30px 16px;
+  }
+
+  .orders-header {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .orders-title {
+    font-size: 24px;
+  }
+
+  .order-card-header {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .order-status-badge {
+    align-self: flex-start;
+  }
+}

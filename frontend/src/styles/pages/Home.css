@@ -1,0 +1,227 @@
+/* Home Page Styles */
+
+.home-page {
+  background: #0a0f1a;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  color: #e8f0fe;
+}
+
+.market-intro {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 60px;
+  gap: 60px;
+  background: rgba(0, 212, 180, 0.03);
+  border-bottom: 1px solid rgba(0, 212, 180, 0.1);
+}
+
+.market-intro > div:first-child {
+  flex: 1;
+}
+
+.market-intro-kicker {
+  font-size: 12px;
+  color: #00d4b4;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+.market-intro-title {
+  font-family: 'Syne', sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  color: #fff;
+  margin: 0 0 16px 0;
+  line-height: 1.2;
+}
+
+.market-intro-copy {
+  font-size: 15px;
+  color: #8fa3c0;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.market-intro-button {
+  padding: 14px 28px;
+  background: linear-gradient(135deg, #00d4b4, #00b89c);
+  color: #000;
+  border: none;
+  border-radius: 12px;
+  font-weight: 800;
+  font-size: 15px;
+  cursor: pointer;
+  font-family: 'DM Sans', sans-serif;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.market-intro-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(0, 212, 180, 0.4);
+}
+
+.marketplace-section {
+  display: flex;
+  flex: 1;
+  overflow: hidden;
+  gap: 0;
+}
+
+.market-header {
+  padding: 24px;
+  border-bottom: 1px solid rgba(0, 212, 180, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+
+.market-header > div:first-child {
+  flex: 1;
+}
+
+.market-label {
+  font-size: 11px;
+  color: #4a6080;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  margin-bottom: 6px;
+  font-weight: 700;
+}
+
+.market-heading {
+  font-family: 'Syne', sans-serif;
+  font-size: 24px;
+  font-weight: 800;
+  color: #fff;
+  margin: 0 0 6px 0;
+}
+
+.market-sub {
+  font-size: 14px;
+  color: #8fa3c0;
+  margin: 0;
+}
+
+.meta-pill {
+  background: rgba(0, 212, 180, 0.08);
+  border: 1px solid rgba(0, 212, 180, 0.2);
+  border-radius: 10px;
+  padding: 8px 16px;
+  font-size: 13px;
+  color: #8fa3c0;
+  font-weight: 600;
+}
+
+.market-grid {
+  display: grid;
+  flex: 1;
+  overflow: hidden;
+  gap: 0;
+  align-items: start;
+}
+
+.left-panel {
+  background: #0a0f1a;
+  border-right: 1px solid rgba(0, 212, 180, 0.12);
+  overflow-y: auto;
+  flex-shrink: 0;
+}
+
+.sticky-left {
+  position: sticky;
+  top: 0;
+}
+
+.center-panel {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  background: #0a0f1a;
+}
+
+.market-search-row {
+  padding: 14px 16px;
+  border-bottom: 1px solid rgba(0, 212, 180, 0.1);
+  flex-shrink: 0;
+}
+
+.market-search-input {
+  width: 100%;
+  padding: 12px 16px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 10px;
+  color: #e8f0fe;
+  font-size: 14px;
+  outline: none;
+  font-family: 'DM Sans', sans-serif;
+  transition: all 0.2s;
+}
+
+.market-search-input:focus {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: #00d4b4;
+}
+
+.market-search-input::placeholder {
+  color: #4a6080;
+}
+
+.right-panel {
+  width: 360px;
+  border-left: 1px solid rgba(0, 212, 180, 0.12);
+  flex-shrink: 0;
+}
+
+@media (max-width: 920px) {
+  .marketplace-section {
+    flex-direction: column;
+  }
+
+  .right-panel {
+    width: 100%;
+    border-left: none;
+    border-top: 1px solid rgba(0, 212, 180, 0.12);
+    min-height: 300px;
+  }
+
+  .market-intro {
+    flex-direction: column;
+    text-align: center;
+    padding: 30px 20px;
+    gap: 20px;
+  }
+
+  .market-intro > div:first-child {
+    flex: 1;
+  }
+}
+
+@media (max-width: 600px) {
+  .market-intro-title {
+    font-size: 24px;
+  }
+
+  .market-header {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .market-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .left-panel {
+    border-right: none;
+    border-bottom: 1px solid rgba(0, 212, 180, 0.12);
+    max-height: 200px;
+  }
+}

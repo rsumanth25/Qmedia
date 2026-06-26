@@ -25,7 +25,12 @@ app.use('/api/media',  mediaRoutes);
 app.get('/api/health', (req, res) =>
   res.json({ status: 'QMedia API is running ✅' })
 );
-
+app.get("/", (req, res) => {
+  res.json({
+    success: true,
+    message: "QMedia Backend is Running 🚀",
+  });
+});
 // ── Connect MongoDB then start server ───────────────────────────
 mongoose
   .connect(process.env.MONGODB_URI)

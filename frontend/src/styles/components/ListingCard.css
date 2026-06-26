@@ -1,0 +1,173 @@
+/* Listing Card Component Styles */
+
+.listing-card {
+  background: #0d1525;
+  border: 1px solid rgba(0, 212, 180, 0.12);
+  border-radius: 12px;
+  overflow: hidden;
+  transition: all 0.2s ease;
+  cursor: default;
+}
+
+.listing-card:hover {
+  border-color: rgba(0, 212, 180, 0.3);
+  box-shadow: 0 8px 24px rgba(0, 212, 180, 0.1);
+}
+
+.listing-thumbnail {
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.listing-thumbnail-icon {
+  font-size: 36px;
+}
+
+.listing-avail-badge {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  font-size: 9px;
+  font-weight: 700;
+  padding: 3px 8px;
+  border-radius: 10px;
+  color: #000;
+  letter-spacing: 0.3px;
+}
+
+.listing-avail-available {
+  background: rgba(0, 212, 180, 0.9);
+}
+
+.listing-avail-unavailable {
+  background: rgba(239, 68, 68, 0.9);
+}
+
+.listing-wish-button {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background: rgba(0, 0, 0, 0.4);
+  border: none;
+  border-radius: 50%;
+  width: 28px;
+  height: 28px;
+  cursor: pointer;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+}
+
+.listing-wish-button:hover {
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.listing-body {
+  padding: 12px 14px;
+}
+
+.listing-type-badge {
+  display: inline-block;
+  font-size: 10px;
+  font-weight: 700;
+  padding: 2px 8px;
+  border-radius: 10px;
+  margin-bottom: 8px;
+  letter-spacing: 0.3px;
+}
+
+.listing-title {
+  font-size: 13px;
+  font-weight: 600;
+  color: #e8f0fe;
+  margin-bottom: 6px;
+  line-height: 1.4;
+}
+
+.listing-meta {
+  display: flex;
+  gap: 5px;
+  font-size: 11px;
+  color: #8fa3c0;
+  margin-bottom: 4px;
+  flex-wrap: wrap;
+}
+
+.listing-media-type {
+  font-size: 10px;
+  color: #4a6080;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.listing-price-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.listing-price-label {
+  font-size: 10px;
+  color: #4a6080;
+  margin-bottom: 2px;
+}
+
+.listing-price {
+  font-size: 16px;
+  font-weight: 700;
+  color: #00d4b4;
+  font-family: 'Syne', sans-serif;
+}
+
+.listing-cart-button {
+  font-size: 12px;
+  font-weight: 700;
+  padding: 6px 14px;
+  border-radius: 8px;
+  font-family: 'DM Sans', sans-serif;
+  transition: all 0.15s ease;
+  cursor: pointer;
+  border: 1px solid;
+}
+
+.listing-cart-button:hover:not(:disabled) {
+  transform: translateY(-1px);
+}
+
+.listing-cart-button:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+@media (max-width: 600px) {
+  .listing-card {
+    border-radius: 8px;
+  }
+
+  .listing-thumbnail {
+    height: 100px;
+  }
+
+  .listing-thumbnail-icon {
+    font-size: 28px;
+  }
+
+  .listing-body {
+    padding: 10px 12px;
+  }
+
+  .listing-title {
+    font-size: 12px;
+    margin-bottom: 4px;
+  }
+
+  .listing-meta {
+    font-size: 10px;
+  }
+}

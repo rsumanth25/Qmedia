@@ -1,0 +1,67 @@
+/* Ad Type Tabs Component Styles */
+
+.ad-type-tabs {
+  display: flex;
+  gap: 8px;
+  padding: 14px 16px;
+  overflow-x: auto;
+  border-bottom: 1px solid rgba(0, 212, 180, 0.1);
+  background: #0d1525;
+  flex-shrink: 0;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(0, 212, 180, 0.2) transparent;
+}
+
+.ad-type-tabs::-webkit-scrollbar {
+  height: 6px;
+}
+
+.ad-type-tabs::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.ad-type-tabs::-webkit-scrollbar-thumb {
+  background: rgba(0, 212, 180, 0.2);
+  border-radius: 3px;
+}
+
+.ad-type-pill {
+  flex-shrink: 0;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 12px;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: all 0.15s ease;
+  font-family: 'DM Sans', sans-serif;
+  border: 1px solid;
+}
+
+.ad-type-pill.inactive {
+  background: rgba(255, 255, 255, 0.04);
+  border-color: rgba(255, 255, 255, 0.08);
+  color: #8fa3c0;
+  font-weight: 500;
+}
+
+.ad-type-pill.inactive:hover {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.15);
+}
+
+.ad-type-pill.active {
+  color: #000;
+  font-weight: 700;
+}
+
+@media (max-width: 600px) {
+  .ad-type-tabs {
+    gap: 6px;
+    padding: 10px 12px;
+  }
+
+  .ad-type-pill {
+    padding: 5px 12px;
+    font-size: 11px;
+  }
+}
