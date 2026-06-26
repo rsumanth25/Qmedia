@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 // All API calls go through this instance
-const api = axios.create({ baseURL: '/api' });
+const api = axios.create({ baseURL: "https://qmedia-ctst.onrender.com" });
 
 // Auto-attach JWT token from localStorage to every request
 api.interceptors.request.use((config) => {
