@@ -8,7 +8,7 @@
 ```
 qmedia-fullstack/
 ├── backend/
-│   ├── .env                         ← YOUR SECRETS (edit before running)
+│   ├── .env                         
 │   ├── package.json
 │   └── src/
 │       ├── server.js
@@ -104,27 +104,6 @@ DELETE /api/cart/clear                     (auth required)
 POST /api/orders/place                     (auth required)
 GET  /api/orders/my                        (auth required)
 PATCH /api/orders/:id/pay                  (auth required)
-
----
-
-## Adding New Ads
-
-Open: backend/src/data/inventoryData.js
-
-Add to the correct category listings array:
-{
-  id: 999,
-  title: 'My Billboard',
-  adType: 'Billboard',
-  location: 'Hyderabad',
-  area: 'Hitech City',
-  minSpend: 15000,
-  price: 15000,
-  availability: true,
-  lat: 17.4474,
-  lng: 78.3762,
-  mediaType: 'Outdoor Static'
-}
 
 ---
 
