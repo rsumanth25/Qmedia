@@ -1,4 +1,4 @@
-# Qmedia – Full Stack Project
+# Digital campaigns – Full Stack Project
 ## React + Node.js + Express + MongoDB + JWT Auth + Hierarchical Marketplace
 
 ---
